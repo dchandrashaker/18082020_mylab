@@ -1,2 +1,4 @@
-FROM node:14-alpine
-RUN apk add -U subversion
+FROM nginx:alpine
+LABEL maintainer="MyLabs"
+VOLUME /myvol
+CMD [ "nginx","-g","daemon off;" ]

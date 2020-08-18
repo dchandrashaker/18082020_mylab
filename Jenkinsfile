@@ -3,7 +3,7 @@ pipeline {
     environment { 
 
         registry = "dchandrashaker/18082020_mylab" 
-        registryCredential = 'dchandrashaker' 
+        registryCredential = 'f8351fba-125a-4e11-9243-d1abce110a55' 
         dockerImage = '' 
     }
 

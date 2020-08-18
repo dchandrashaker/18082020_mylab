@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('BuildPhase') {
             steps {
-                sh 'docker build -t dchandrashaker/18082020_mylab:latest'
+                sh 'docker images'
                               
             }
         }

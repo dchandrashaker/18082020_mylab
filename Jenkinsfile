@@ -1,6 +1,10 @@
 pipeline { 
 
     environment { 
+        stage('Initialize'){
+        def dockerHome = tool 'docker'
+        env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
 
         registry = "dchandrashaker/18082020_mylab" 
         registryCredential = 'dchandrashaker' 

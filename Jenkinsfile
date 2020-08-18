@@ -1,12 +1,14 @@
 pipeline { 
 
+    environment { 
+
         registry = "dchandrashaker/18082020_mylab" 
         registryCredential = 'dchandrashaker' 
         dockerImage = '' 
     }
 
-   agent { dockerfile true }
 
+   agent any 
     stages { 
         stage('Cloning our Git') { 
             steps { 

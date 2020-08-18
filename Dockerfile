@@ -1,3 +1,4 @@
-FROM alpine:3.6
+FROM alpine:3.4
 RUN apk update
-CMD ["top"]
+RUN apk add vim
+RUN apk add curl
